@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Conferense on ........">
+    <meta name="keywords" content="fgiet,fgiet connference,conference name,fgiet cs conference">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>ETHPC|SUBMIIT</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+</head>
+
+<body>
+    <header style="height:270px;">
+        <!--	<div id="particles-js"></div> -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo right">ETHPC 2K17</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html"><span>HOME</span></a></li>
+                    <li><a href="topic.html"><span>TOPICS</span></a></li>
+                    <li><a href="#"><span class="activate">SUBMIT</span></a></li>
+                    <li><a href="contact.html"><span>CONTACT</span></a></li>
+                    <li><a href="downloads.html"><span>DOWNLOADS</span></a></li>
+                    <li><a href="user/user_submission.html"><span>PROFILE</span></a></li>
+                    <li><a href="#"><span>LOGIN/REGISTER</span></a></li>
+                    <li><a href="#"><span>LOGOUT</span></a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <div class="logo">
+                        <h3 class="center-align">ETHPC 2K17</h3>
+                    </div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="topic.html">TOPICS</a></li>
+                    <li class="active"><a href="#">SUBMIT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="downloads.html">DOWNLOADS</a></li>
+                    <li><a href="user/user_submission.html">PROFILE</a></li>
+                    <li><a href="#">LOGIN/REGISTER</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="as_title_subpage row ">
+            <span>SUBMIT PAPER</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col s12 m9 l12">
+
+            <div class="section">
+                <div class="container">
+                    <h3 class="center-align"><span>GUIDELINES</span></h3>
+
+                    <ul>
+                        <li class="flow-text">1) The format of the paper should follow <a href="#">this</a> pattern.</li>
+                        <li class="flow-text">2) The format of the file should be .pdf or .docx.</li>
+                        <li class="flow-text">3) The size of the attachment should be less than 2mb.</li>
+                        <li class="flow-text">4) User can view all his submissions <a href="user/user_submission.html">here</a>.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <h3 class="center-align"><span>SUBMISSION</span></h3>
+                    <form enctype="multipart/form-data">
+                        <div class="row">
+
+                            <div class="input-field col l6 s12">
+                                <select name="track">
+                                    <option value="" disabled selected>Select your Track</option>
+                                    <option value="1">Fuzzy Logic / Neural Network</option>
+                                    <option value="2">Big Data Analysis</option>
+                                    <option value="3">Artificial Intelligence</option>
+                                    <option value="4">Cryptography and Cyber Security</option>
+									<option value="5">Cloud Computing</option>
+									<option value="6">Mobile computing and E Commerce</option>
+									<option value="7">Statical Analysis in Management Research</option>
+									<option value="8">Internet of Things</option>
+									<option value="9">Soft Computing</option>
+									<option value="10">Distributed Database</option>
+									<option value="11">Parallel and Distributed Computing</option>
+									<option value="12">Grid Cluster Computing</option>
+									<option value="13">Algorithm And Simulation</option>
+									<option value="14">Digital Image Processing and Signal Processing</option>
+									<option value="15">Software Engineering</option>
+									<option value="16">Natural Lannguage Processing</option>
+									<option value="17">Computer Adhoc Network</option>
+									<option value="18">Highh Performance Computing</option>
+                                </select>
+                                <label>Track*</label>
+                            </div>
+                            <div class="input-field col l6 s12">
+                                <input id="title" type="text" class="validate" required>
+                                <label for="title" data-error="Cant leave this column blank">Title*</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea" data-length="300"></textarea>
+                                <label for="textarea1">Description</label>
+                            </div>
+                            <div class="row">
+                                <label>Upload Paper</label>
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>Browse</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload your paper here">
+                                    </div>
+                                </div>
+                                <div class="input-field col s12">
+                                    <button type="submit" class="waves-effect waves-light btn col l2 offset-l10">
+                                        SUBMIT
+                                    </button>
+                                </div>
+
+                            </div>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">ETHPC CONFERENCE 2K17</h5>
+                    <p class="grey-text text-lighten-4">Feroze Gandhhi Institute Presents conference on Emerging Trends in High Performance Computing</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Review Process</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Publication</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Indexing</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Palgiarism Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                FGIET © 2017
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">DOWNLOADS</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">CONTACT</a>
+                <a class="grey-text text-lighten-4 right hide-on-small-only" style="margin-left:10px;" href="#!">ABOUT</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">HOME</a>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 150,
+            });
+            $('.button-collapse').sideNav({
+                menuWidth: 200,
+                closeOnClick: true,
+                draggable: true,
+            });
+            $('select').material_select();
+
+        });
+    </script>
+
+</body>
+
+</html>

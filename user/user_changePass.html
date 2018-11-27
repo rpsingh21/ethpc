@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Conferense on ........">
+    <meta name="keywords" content="fgiet,fgiet connference,conference name,fgiet cs conference">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+
+    <style>
+        .as_title_subpage {
+            margin-top: 165px;
+        }
+        
+        .as_title_subpage span {
+            font-size: 8rem;
+        }
+        
+        @media (max-width:641px) {
+            .as_title_subpage span {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header style="height:270px;background:#00214F;">
+        <!--	<div id="particles-js"></div> -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo right">ETHPC 2K17</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="../index.html"><span>HOME</span></a></li>
+                    <li><a href="user_submission.html"><span>MY SUBMISSIONS</span></a></li>
+                    <li><a href="#"><span class="activate">CHANGE PASSWORD</span></a></li>
+                    <li><a href="#"><span>LOGOUT</span></a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li> <a href="user_submission.html">MY SUBMISSIONS</a></li>
+                    <li class="active"><a href="#">CHANGE PASSWORD</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="as_title_subpage row ">
+            <span>CHANGE PASSWORD</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col s12 m9 l12">
+            <div class="section ">
+                <div class="container">
+                    <form class="col s12 l8 offset-l2">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" pattern=".{6,}" class="validate" required>
+                                <label data-error="Password must be at least of 6 chars" for="password">Enter Password</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input id="newPassword" type="password" pattern=".{6,}" class="validate" required>
+                                <label for="newPassword" data-error="Password must be at least of 6 chars">Enter New Password</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input id="cnfrmNewPassword" type="password" pattern=".{6,}" class="validate" onchange="validatePass(this)" required>
+                                <label for="cnfrmNewPassword" data-error="Password didnt match">Confirm Password</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <button type="submit" class="waves-effect waves-light btn col l2 offset-l10">
+                                    CHNAGE
+                            </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">ETHPC CONFERENCE 2K17</h5>
+                    <p class="grey-text text-lighten-4">Feroze Gandhhi Institute Presents conference on Emerging Trends in High Performance Computing</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Review Process</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Publication</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Indexing</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Palgiarism Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                FGIET © 2017
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">DOWNLOADS</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">CONTACT</a>
+                <a class="grey-text text-lighten-4 right hide-on-small-only" style="margin-left:10px;" href="#!">ABOUT</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">HOME</a>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 150,
+            });
+            $('.button-collapse').sideNav({
+                menuWidth: 200,
+                closeOnClick: true,
+                draggable: true,
+            });
+
+        });
+    </script>
+    <script>
+        function validatePass(ip) {
+            if (ip.value != document.getElementById('newPassword').value) {
+                ip.setCustomValidity('Password didnt match');
+            } else {
+                ip.setCustomValidity('');
+            }
+        }
+    </script>
+</body>
+
+</html>

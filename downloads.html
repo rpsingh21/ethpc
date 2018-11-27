@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Conferense on ........">
+    <meta name="keywords" content="fgiet,fgiet connference,conference name,fgiet cs conference">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+</head>
+
+<body>
+    <header style="height:270px;">
+        <!--	<div id="particles-js"></div> -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo right">ETHPC 2K17</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html"><span>HOME</span></a></li>
+                    <li><a href="topic.html"><span>TOPICS</span></a></li>
+                    <li><a href="submit.html"><span>SUBMIT</span></a></li>
+                    <li><a href="contact.html"><span>CONTACT</span></a></li>
+                    <li><a href="#"><span class="activate">DOWNLOADS</span></a></li>
+                    <li><a href="user/user_submission.html"><span>PROFILE</span></a></li>
+                    <li><a href="#"><span>LOGIN/REGISTER</span></a></li>
+                    <li><a href="#"><span>LOGOUT</span></a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <div class="logo">
+                        <h3 class="center-align">ETHPC 2K17</h3>
+                    </div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="topic.html">TOPICS</a></li>
+                    <li><a href="submit.html">SUBMIT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="active"><a href="#">DOWNLOADS</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="#">LOGIN/REGISTER</a></li>
+                    <li><a href="#">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="as_title_subpage row ">
+            <span>DOWNLOADS</span>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col s12 m9 l12">
+            <div class="section">
+                <div class="container">
+                    <h3 class="center-align"><span>DOWNLOADS</span></h3>
+                    <div class="col l12">
+                        <ul id="myList">
+                            <li class="flow-text"><i class="material-icons">file_download</i>This is first download link</li>
+                            <li class="flow-text"><i class="material-icons">file_download</i>This is second download link</li>
+                            <li class="flow-text"><i class="material-icons">file_download</i>This is third download link</li>
+                            <li class="flow-text"><i class="material-icons">file_download</i>This is forth download link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">ETHPC CONFERENCE 2K17</h5>
+                    <p class="grey-text text-lighten-4">Feroze Gandhhi Institute Presents conference on Emerging Trends in High Performance Computing</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Review Process</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Publication</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Indexing</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Palgiarism Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                FGIET © 2017
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">DOWNLOADS</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">CONTACT</a>
+                <a class="grey-text text-lighten-4 right hide-on-small-only" style="margin-left:10px;" href="#!">ABOUT</a>
+                <a class="grey-text text-lighten-4 right" style="margin-left:10px;" href="#!">HOME</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 150,
+            });
+            $('.button-collapse').sideNav({
+                menuWidth: 200,
+                closeOnClick: true,
+                draggable: true,
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var options = [{
+                selector: '#myList',
+                offset: 200,
+                callback: function(el) {
+                    Materialize.showStaggeredList($(el));
+                }
+            }, ];
+            Materialize.scrollFire(options);
+        });
+    </script>
+</body>
+
+</html>
